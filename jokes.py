@@ -30,7 +30,7 @@ string -> string
 def back_in_my_day(word):
     prompt = 'Back In My Day:\n' \
                'Fill in the following blank with your Joke!\n\n'\
-               'Back in my day we didn\'t have ' + word + ', ________\n'
+               'Back in my day we didn\'t have ' + word + ', ________.\n'
     return prompt
 
 
@@ -42,9 +42,9 @@ string -> string
 def yo_mama(word):
     prompt = 'Yo Mama:\n' \
                'The world is full of Yo Mama jokes.\nTry making this one a compliment!\n\n'\
-               'Yo mama is so ' + word + '\n' \
-               '(how ' + word + ' is she?)\n' \
-               'She\'s so ' + word + ', that ________\n'
+               'Yo mama is so ' + word + '!\n' \
+               '(How ' + word + ' is she?)\n' \
+               'She\'s so ' + word + ', that ________.\n'
     return prompt
 
 
@@ -56,14 +56,14 @@ string -> string
 def sex_with_me(word):
     if vowel_start(word):
         prompt = 'Sex With Me:\n' \
-                 'It\'s easy to make a bad sex joke.\n Try to be clever and creative instead of ' \
-                 'going for shock value with he following prompt!\n\n'\
-                 'Sex with me is like an' + word + ', ________\n'
+                 'It\'s easy to make a bad sex joke.\nTry to be clever and creative instead of ' \
+                 'going for shock value with the following prompt!\n\n'\
+                 'Sex with me is like an ' + word + ', ________.\n'
     else:
         prompt = 'Sex With Me:\n' \
-                 'It\'s easy to make a bad sex joke.\n Try to be clever and creative instead of ' \
-                 'going for shock value with he following prompt!\n\n'\
-                 'Sex with me is like a' + word + ', ________\n'
+                 'It\'s easy to make a bad sex joke.\nTry to be clever and creative instead of ' \
+                 'going for shock value with the following prompt!\n\n'\
+                 'Sex with me is like a ' + word + ', ________.\n'
     return prompt
 
 
@@ -75,8 +75,8 @@ string -> string
 def bar_joke(word):
     prompt = '185:\n' \
              'Come up with a clever pun or story for the following prompt!\n' \
-             'you can choose any number you want at the start!,\n\n'\
-             '185 ' + word + '(s) walk into a bar, ________\n'
+             'You can choose any number you want at the start!\n\n'\
+             '<number> ' + word + '(s) walk into a bar, ________.\n'
     return prompt
 
 
@@ -89,13 +89,13 @@ def pickup_lines(word):
     if vowel_start(word):
         prompt = 'Pickup Lines:\n' \
              'Come up with your best pickup line using the following prompt!\n' \
-             'Remember being creepy isn\'t funny or attractive!,\n\n'\
-             'Hey <honorific>, are you a ' + word + ' because ________\n'
+             'Remember being creepy isn\'t funny or attractive!\n\n'\
+             'Hey <honorific>, are you an ' + word + '? Because ________.\n'
     else:
         prompt = 'Pickup Lines:\n' \
              'Come up with your best pickup line using the following prompt!\n' \
-             'Remember being creepy isn\'t funny or attractive!,\n\n'\
-             'Hey <honorific>, are you an ' + word + ' because ________\n'
+             'Remember being creepy isn\'t funny or attractive!\n\n'\
+             'Hey <honorific>, are you a ' + word + '? Because ________.\n'
     return prompt
 
 
