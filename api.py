@@ -1,17 +1,28 @@
 import urllib
+from enum import Enum
 import requests
+from requests.exceptions import HTTPError
 from bs4 import BeautifulSoup
+
 
 """
 string -> Boolean
 """
-def verify_noun(word):
+def verify_part_of_speech(word, posp):
     url = 'https://www.merriam-webster.com/dictionary/' + word
+
+    try:
+        r = requests.get(url)
+        r.raise_for_status()
+    except HTTPError:
+        print("Word not in Webster")
+        return False
+
     u = urllib.request.urlopen(url)
     soup = BeautifulSoup(u, 'html.parser')
     parts_of_speech = soup.findAll('a', {'class': 'important-blue-link'})
     for part in parts_of_speech:
-        if 'noun' in part:
+        if posp in part:
             return True
     return False
 
