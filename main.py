@@ -3,15 +3,18 @@ import api
 import jokes
 import random
 
-parts_of_speech = ['noun', 'adjective', 'verb']
+
+# this distribution of parts of speech should givew all jokes roughly equal probability.
+parts_of_speech = ['noun', 'noun', 'noun', 'noun', 'noun', 'adjective', 'adjective']  # , 'verb']
 
 """
 main
 """
 if __name__ == '__main__':
     is_part = False
-
+    word = ''
     part = random.choice(parts_of_speech)
+
     print(part)
 
     while not is_part:
