@@ -1,5 +1,5 @@
 import time
-import api
+import words
 import jokes
 import random
 
