@@ -18,7 +18,6 @@ def verify_part_of_speech(word, posp):
         r = requests.get(url)
         r.raise_for_status()
     except HTTPError:
-        print("Word not in Webster")
         return False
 
     # look through webster html to confirm the given posp matches that of the word
