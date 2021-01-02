@@ -76,7 +76,7 @@ def bar_joke(word):
     prompt = '185:\n' \
              'Come up with a clever pun or story for the following prompt!\n' \
              'You can choose any number you want at the start!\n\n'\
-             '<number> ' + word + '(s) walk into a bar, ________.\n'
+             '<number> ' + word + ' walk into a bar, ________.\n'
     return prompt
 
 

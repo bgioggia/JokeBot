@@ -2,6 +2,8 @@ import time
 import words
 import jokes
 import random
+import discord
+from config import BOT
 
 """
 
@@ -34,14 +36,43 @@ def prompt():
         time.sleep(.35)
 
     joke = prompt_from_word(word, part)
-    return joke
+    return '\n' + joke
 
 """
 main
 """
 if __name__ == '__main__':
-    print()
-    print('placeholder')
+    TOKEN = BOT['TOKEN']
+    GUILD = BOT['GUILD']
+
+    client = discord.Client()
+
+    # helpful connection confirmtion
+    # from https://realpython.com/how-to-make-a-discord-bot-python/#how-to-make-a-discord-bot-in-python
+    @client.event
+    async def on_ready():
+        for guild in client.guilds:
+            if guild.name == GUILD:
+                break
+        print(
+            f'{client.user} is connected to the following guild:\n'
+            f'{guild.name}(id: {guild.id})\nREADY FOR JOKING'
+        )
+
+
+    @client.event
+    async def on_message(message):
+        if message.author == client.user:
+            return
+
+        if message.content == 'prompt':
+            await message.channel.send("Please give me a moment to think of a word! :)\n\n")
+            response = prompt()
+            await message.channel.send(response)
+
+
+    client.run(TOKEN)
+
 
 
 
