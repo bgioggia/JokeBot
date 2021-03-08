@@ -53,11 +53,53 @@ def singularize_word(word):
 
 """
 Gets a word using the random word api
-
+    r = requests.get('https://random-word-api.herokuapp.com/word?number=1')
+    wrd = r.text
+    wrd = wrd[2:(len(wrd)-2)]
+    if len(wrd) > 6:
+        wrd = get_word()
+    return wrd
 void -> string
 """
 def get_word():
+    r = requests.get('https://random-word-api.herokuapp.com/word?number=100')
+    words = r.text.split(',')
+    formatted_words = []
+    for word in words:
+        word = word.replace('"', '')
+        word = word.replace('[', '')
+        word = word.replace(']', '')
+        formatted_words.append(word)
+    ret_word = '1234567'
+    for word in formatted_words:
+        if len(ret_word) > len(word) > 5:
+            ret_word = word
+    return ret_word
+
+
+"""
+Gets a word using the random noun api
+
+void -> string
+"""
+def get_noun():
+    r = requests.get('https://randomwordgenerator.com/noun.php')
+    soup = BeautifulSoup(r.text, 'html.parser')
+    print(soup)
+    singular = str(soup.findAll('span', {'class': 'support'}))
+    print(singular)
+    #wrd = r.text
+    #wrd = wrd[2:(len(wrd)-2)]
+    #return wrd
+
+"""
+Gets a word using the random adjective api
+
+void -> string
+"""
+def get_adjective():
     r = requests.get('https://random-word-api.herokuapp.com/word?number=1')
     wrd = r.text
     wrd = wrd[2:(len(wrd)-2)]
     return wrd
+

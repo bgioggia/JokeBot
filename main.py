@@ -42,6 +42,8 @@ def prompt():
 main
 """
 if __name__ == '__main__':
+    #print(words.get_word())
+
     TOKEN = BOT['TOKEN']
     GUILD = BOT['GUILD']
 
@@ -72,6 +74,7 @@ if __name__ == '__main__':
 
 
     client.run(TOKEN)
+
 
 
 
