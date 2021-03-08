@@ -74,6 +74,8 @@ def get_word():
     for word in formatted_words:
         if len(ret_word) > len(word) > 5:
             ret_word = word
+    if ret_word == '1234567':
+        ret_word = get_word()
     return ret_word
 
 
