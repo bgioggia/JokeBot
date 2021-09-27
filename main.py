@@ -56,7 +56,7 @@ if __name__ == '__main__':
             return
 
         if message.content.lower() == 'prompt':
-            await message.channel.send("Please give me a moment to think of a word! :)\n\n")
+            #await message.channel.send("JOKE\n\n")
             response = prompt("random")
             await message.channel.send(response)
 
