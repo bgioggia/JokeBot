@@ -52,7 +52,7 @@ string -> string
 def bar_joke():
     word = random.choice(bar_jokes_words.bar_joke_word)
     prompt = '185:\n' \
-             '_ ' + word + ' walk into a bar, ________.\n'
+             '______ ' + word + ' walk into a bar, ___________.\n'
     return prompt
 
 
@@ -64,7 +64,7 @@ string -> string
 def pickup_lines():
     word = random.choice(pickup_lines_words.pickup_lines_word)
     prompt = 'Pickup Lines:\n' \
-             'Hey _____, are you ' + word + '? Because ________.\n'
+             'Hey ________, are you ' + word + '? Because ________.\n'
     return prompt
 
 
