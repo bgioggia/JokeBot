@@ -52,7 +52,7 @@ string -> string
 def bar_joke():
     word = random.choice(bar_jokes_words.bar_joke_word)
     prompt = '185:\n' \
-             '___ ' + word + ' walk into a bar, ________.\n'
+             '_ ' + word + ' walk into a bar, ________.\n'
     return prompt
 
 
