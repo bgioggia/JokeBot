@@ -1,0 +1,10 @@
+yo_mama_word = ["civil", "vengeful", "tangible", "magical", "little", "seemly", "judicious", "difficult", "guilty",
+                "healthy", "jagged", "wicked", "decisive", "tall", "psychedelic", "necessary", "mental", "available",
+                "lacking", "hungry", "knotty", "icky", "exlusive", "enchanted", "damp", "valuable", "nostalgic",
+                "habitual", "jealous", "charming", "faithful", "scattered", "kindly", "smart", "meek", "war-hungry",
+                "understood", "misunderstood", "lowly", "dusty", "victorious", "crowded", "poor", "rich", "changeable",
+                "slow", "speedy", "insidious", "nutritious", "keen", "high", "elastic", "silent", "truthful",
+                "synonymous", "lamentable", "fancy", "goofy", "impartial", "productive", "industrious", "guiltless",
+                "flaky", "acoustic", "tearful", "wrong", "threatening", "towering", "infernal", "visible", "new",
+                "well-to-do", "grumpy", "acceptable", "guarded", "steady", "chilly", "materialistic", "dashing",
+                "adamant", "abstract", "cagey", "caustic"]
