@@ -19,5 +19,6 @@ back_in_my_day_word = ["beer", "halls", "priorities",  "rivers", "procedures", "
                        "soda", "churches", "alarm clocks", "almonds", "earthquakes", "regrets", "tests", "SATs",
                        "metals", "metal", "night", "nights", "calendars", "rice", "gold", "toothpaste", "toothbrushes",
                        "pens", "aloe vera", "cacti", "monitors", "Yeti Ramblers", "discord servers", "startup culture",
-                       "smoking", "flooding", "scrounging", "rolling" "Play-Doh", "Montana", "slack", "The Middle Ages"
-                       ]
+                       "smoking", "flooding", "scrounging", "rolling" "Play-Doh", "Montana", "slack", "The Middle Ages",
+                       "medicine", "mushrooms", "guitars", "water bottles", "food", "couches", "football fields",
+                       "sheep"]

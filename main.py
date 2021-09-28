@@ -55,9 +55,21 @@ if __name__ == '__main__':
         if message.author == client.user:
             return
 
-        if message.content.lower() == 'prompt':
-            #await message.channel.send("JOKE\n\n")
-            response = prompt("random")
+        msg = message.content.lower()
+
+        if '!prompt' in msg:
+            choice = 'random'
+            if 'sex' in msg:
+                choice = 'sex_with_me'
+            elif 'pickup' in msg:
+                choice = 'pickup_lines'
+            elif 'mama' in msg:
+                choice = 'yo_mama'
+            elif 'bar' in msg:
+                choice = 'bar_jokes'
+            elif 'back' in msg or 'day' in msg:
+                choice = 'back_in_my_day'
+            response = prompt(choice)
             await message.channel.send(response)
 
 
