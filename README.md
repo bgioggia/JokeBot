@@ -1,9 +1,5 @@
 # JokeBot
-A discord bot to make joke prompts for my improv troupe's discord. I've included some guiding instruction
-above each joke prompt, since we usually try to keep our content clean and silly rather than edgy and 
-shocking. You can remove or alter these based on the type of content you want people putting in your
-server. 
-
+A discord bot to make joke prompts for my improv troupe's discord.
 
 To Run this on your own discord server you only need to follow a few steps
 
